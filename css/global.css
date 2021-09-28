@@ -20,12 +20,16 @@ a {
 
 .wrapper {
     padding: 25px 0;
+    display: flex;
+    justify-content: center;
 }
 
 body > header {
     margin-bottom: 20px;
     background: white;
     box-shadow: 1px 0px 8px rgb(200, 200, 200);
+    padding-left: 1%;
+
 }
 
 header .logo-search form  {
@@ -79,6 +83,30 @@ main header aside img {
     box-shadow: 0 0 5px #cecece;
 }
 
+#mainContainer {
+    display: flex;
+}
+
+.aside1 {
+    width: 25%;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-photo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profile-picture {
+    padding-right: 1em;
+}
+
 nav ul li:last-child {
     margin-bottom: 30px;
 }
@@ -126,6 +154,8 @@ h2 {
     font-size: 20px;
     font-weight: normal;
     color: #4b5c66;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 header form {
@@ -136,7 +166,7 @@ input.search {
     background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
     box-shadow: none;
     height: 28px;
-    width: 100%;
+    width: 30%;
     font-size: 13px;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
@@ -144,6 +174,10 @@ input.search {
     border-radius: 15px;
     top: 11px;
     box-shadow: inset 1px 1px 5px #d5d5d5;
+}
+
+.formSearch {
+    padding-left: 1em;
 }
 
 input.submit {
@@ -215,6 +249,11 @@ nav a.top { background: url("../img/icon/top.png") no-repeat 0px; }
 nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
+
+@media screen and (max-width: 600px) {
+    .aside1{display: none}
+    main{padding-left: 1em}
+}
 
 
 
