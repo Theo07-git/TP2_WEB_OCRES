@@ -19,9 +19,10 @@ a {
 }
 
 .wrapper {
-    padding: 25px 0;
+    padding: 25px 10em;
     display: flex;
     justify-content: center;
+
 }
 
 body > header {
@@ -29,11 +30,11 @@ body > header {
     background: white;
     box-shadow: 1px 0px 8px rgb(200, 200, 200);
     padding-left: 1%;
-
 }
 
 header .logo-search form  {
     width: 50%;
+    min-width: 20%;
 }
 
 header .user {
@@ -85,10 +86,11 @@ main header aside img {
 
 #mainContainer {
     display: flex;
+    padding: 0 10%;
 }
 
 .aside1 {
-    width: 25%;
+    width: 20em;
     padding-left: 1em;
     padding-right: 2em;
 }
@@ -134,6 +136,8 @@ h1 {
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .stats-links span, .stats-links a {
@@ -148,6 +152,10 @@ h1 {
     font-size: 12px;
     font-weight: normal;
     color: #4b5c66;
+}
+
+.links {
+    padding-right: 1em;
 }
 
 h2 {
